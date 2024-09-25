@@ -16,6 +16,8 @@ import streamlit.components.v1 as components
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from gspread_dataframe import set_with_dataframe
+from streamlit_gsheets import GSheetsConnection
+
 
 # Define the parameter descriptions
 parameter_descriptions = {
