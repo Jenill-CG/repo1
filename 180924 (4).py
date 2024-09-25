@@ -462,7 +462,8 @@ def main():
 
         
         # Centered and colored message
-        st.markdown("<p style='text-align: center; color: green;font-size: 26px;'>File uploaded successfully 🥳</p>", unsafe_allow_html=True)
+        #st.markdown("<p style='text-align: center; color: green;font-size: 26px;'>File uploaded successfully 🥳</p>", unsafe_allow_html=True)
+        st.success("<p style='text-align: center; color: green;font-size: 26px;'>File uploaded successfully 🥳</p>", unsafe_allow_html=True)
         
         col1, col2= st.columns([1,1])
         with col1:    
@@ -699,6 +700,10 @@ def main():
         # Download button for teacher codes
         st.markdown(download_link(teacher_codes, "School_Codes.xlsx", "Download School Codes"), unsafe_allow_html=True)
 
+        
+        
+
+        
     # if st.session_state['mapped_data'] is not None:
         # Centered title
         css = """
