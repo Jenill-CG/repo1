@@ -24,7 +24,7 @@ data_to_write = pd.DataFrame({
 })
 
 # Specify the sheet name (Sheet2) to write data
-conn.write(spreadsheet=url, worksheet="Sheet2", data=data_to_write)
+conn.write(spreadsheet=url, data=data_to_write)
 
 st.write("Data written successfully to Sheet2!")
 
