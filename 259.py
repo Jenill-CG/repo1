@@ -706,8 +706,17 @@ def main():
         scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
         creds = ServiceAccountCredentials.from_json_keyfile_name(r'C:\Users\jenil\Downloads\tester-250924-0bb9791d21c1.json', scope)
         client = gspread.authorize(creds)
-        
 
+        spreadsheet = client.open('temp_tester')
+        
+        
+        worksheet = spreadsheet.get_worksheet(1)
+
+        existing_data = worksheet.get_all_values()
+        next_row = len(existing_data) + 1
+
+        temp_rows =  mapped_data.head(2)
+        set_with_dataframe(worksheet,temp_rows, row=next_row, include_index=False, include_column_header=True)
         
     # if st.session_state['mapped_data'] is not None:
         # Centered title
