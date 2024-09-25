@@ -7,4 +7,4 @@ xlsxwriter
 streamlit_pdf_viewer
 streamlit_folium 
 plotly
-streamlit_gsheets
+st-gsheets-connection
