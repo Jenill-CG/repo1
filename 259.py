@@ -703,7 +703,9 @@ def main():
         # Download button for teacher codes
         st.markdown(download_link(teacher_codes, "School_Codes.xlsx", "Download School Codes"), unsafe_allow_html=True)
 
-        
+        scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+        creds = ServiceAccountCredentials.from_json_keyfile_name(r'C:\Users\jenil\Downloads\tester-250924-0bb9791d21c1.json', scope)
+        client = gspread.authorize(creds)
         
 
         
