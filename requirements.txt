@@ -9,3 +9,4 @@ streamlit_folium
 plotly
 gspread
 oauth2client.service_account
+streamlit_gsheets
