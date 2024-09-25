@@ -335,8 +335,8 @@ def main():
     if st.session_state['thank_you_displayed']:
         st.markdown("""
             <div style='border: 1px solid #c3e6cb; padding: 15px; border-radius: 5px; background-color: #d4edda; color: #155724;'>
-                <h2 style='text-align: center; color: #155724;'>😊 Thank You 😊</h2>
                 <p style='text-align: center; font-size: 18px; color: #155724;'>We hope PDFs are meeting your expectations</p>
+                <h2 style='text-align: center; color: #155724;'>😊 Thank You 😊</h2>
                 <h3 style='text-align: center; color: #155724;'>We'd love to hear your feedback👇</h3>
                 <p style='text-align: center;'><a href='https://forms.gle/jpeC9xmtzSBqSQhL9' target='_blank' style='color: #155724;'>Feedback form</a></p>
             </div>
