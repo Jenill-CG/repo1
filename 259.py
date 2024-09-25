@@ -13,6 +13,9 @@ from streamlit_folium import st_folium
 import folium
 import plotly.express as px
 import streamlit.components.v1 as components
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
+from gspread_dataframe import set_with_dataframe
 
 # Define the parameter descriptions
 parameter_descriptions = {
